@@ -22,9 +22,8 @@ $('#content').click(function(e){
 })
 
 //MOUSE MOVE
-$('#content').mousemove(function(e){
-	updatePlan();
-})
+$('#content').mousemove(function(e){ updatePlan();})
+document.addEventListener('touchmove', function(e) { updatePlan();}, false);
 
 $('#info_button').click(function(){
     if ($('#info').css('visibility') == 'hidden') {
